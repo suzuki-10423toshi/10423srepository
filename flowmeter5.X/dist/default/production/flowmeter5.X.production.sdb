@@ -1,0 +1,322 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Users\user\Documents\toshi\è∫òaã@äÌåvëïé–\GitHub clone\10423srepository/flowmeter5_main.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"16
+[v _Read_ADC Read_ADC `(ui  1 e 2 0 ]
+"24
+[v _Split_Display Split_Display `(v  1 e 1 0 ]
+"32
+[v _Send_LED_Data Send_LED_Data `(v  1 e 1 0 ]
+"45
+[v _Scale_Display Scale_Display `(ui  1 e 2 0 ]
+"54
+[v _main main `(v  1 e 1 0 ]
+"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"26 C:\Users\user\Documents\toshi\è∫òaã@äÌåvëïé–\GitHub clone\10423srepository/flowmeter5_define.h
+[v _MODE_FONT_TABLE MODE_FONT_TABLE `DC[8]uc  1 e 8 0 ]
+"11 C:\Users\user\Documents\toshi\è∫òaã@äÌåvëïé–\GitHub clone\10423srepository/flowmeter5_gloabals.c
+[v _adc_val adc_val `ui  1 e 2 0 ]
+"12
+[v _display_val display_val `ui  1 e 2 0 ]
+"13
+[v _mode mode `uc  1 e 1 0 ]
+"14
+[v _flash_on flash_on `uc  1 e 1 0 ]
+"15
+[v _flash_timer flash_timer `ui  1 e 2 0 ]
+"17
+[v _LED_FONT_TABLE LED_FONT_TABLE `DC[10]uc  1 e 10 0 ]
+"7 C:\Users\user\Documents\toshi\è∫òaã@äÌåvëïé–\GitHub clone\10423srepository/flowmeter5_main.c
+[v _digit_val digit_val `[4]uc  1 e 4 0 ]
+[s S136 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"307 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f887.h
+[u S145 . 1 `S136 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES145  1 e 1 @7 ]
+"843
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"850
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1238
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1245
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S157 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1557
+[u S166 . 1 `S157 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES166  1 e 1 @135 ]
+"2177
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S47 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2231
+[s S56 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S61 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S67 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S72 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S77 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S82 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S87 . 1 `S47 1 . 1 0 `S56 1 . 1 0 `S61 1 . 1 0 `S67 1 . 1 0 `S72 1 . 1 0 `S77 1 . 1 0 `S82 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES87  1 e 1 @148 ]
+"2970
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2977
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3909
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @249 ]
+"4404
+[v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
+"4428
+[v _TRISB0 TRISB0 `VEb  1 e 0 @1072 ]
+"4431
+[v _TRISB1 TRISB1 `VEb  1 e 0 @1073 ]
+"4452
+[v _TRISC0 TRISC0 `VEb  1 e 0 @1080 ]
+"4461
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"4467
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"54 C:\Users\user\Documents\toshi\è∫òaã@äÌåvëïé–\GitHub clone\10423srepository/flowmeter5_main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"99
+[v main@blank blank `[4]uc  1 a 4 51 ]
+"93
+[v main@flash_state flash_state `uc  1 s 1 flash_state ]
+"111
+} 0
+"24
+[v _Split_Display Split_Display `(v  1 e 1 0 ]
+{
+[v Split_Display@display display `ui  1 p 2 0 ]
+[v Split_Display@digits digits `*.4uc  1 p 1 2 ]
+"29
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 11 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 7 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 9 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"32 C:\Users\user\Documents\toshi\è∫òaã@äÌåvëïé–\GitHub clone\10423srepository/flowmeter5_main.c
+[v _Send_LED_Data Send_LED_Data `(v  1 e 1 0 ]
+{
+"33
+[v Send_LED_Data@i i `i  1 a 2 3 ]
+"32
+[v Send_LED_Data@digits digits `*.4uc  1 p 1 0 ]
+[v Send_LED_Data@mode mode `uc  1 p 1 1 ]
+"42
+} 0
+"45
+[v _Scale_Display Scale_Display `(ui  1 e 2 0 ]
+{
+"48
+[v Scale_Display@scale_max scale_max `[8]f  1 a 32 9 ]
+"49
+[v Scale_Display@flow flow `f  1 a 4 45 ]
+"46
+[v Scale_Display@current current `f  1 a 4 41 ]
+"45
+[v Scale_Display@adc_val adc_val `ui  1 p 2 2 ]
+[v Scale_Display@mode mode `uc  1 p 1 4 ]
+"46
+[v Scale_Display@F1443 F1443 `[8]f  1 s 32 F1443 ]
+"52
+} 0
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 1 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 0 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 72 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S540 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S545 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S548 . 4 `l 1 i 4 0 `d 1 f 4 0 `S540 1 fAsBytes 4 0 `S545 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S548  1 a 4 46 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 40 ]
+[s S617 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S620 . 2 `s 1 i 2 0 `us 1 n 2 0 `S617 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S620  1 a 2 50 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 45 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 44 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 39 ]
+"8
+[v ___flmul@b b `d  1 p 4 26 ]
+[v ___flmul@a a `d  1 p 4 30 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `us  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 20 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 13 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 18 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 25 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 24 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 17 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 71 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 70 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 69 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 68 ]
+"10
+[v ___fladd@b b `d  1 p 4 52 ]
+[v ___fladd@a a `d  1 p 4 56 ]
+"237
+} 0
+"16 C:\Users\user\Documents\toshi\è∫òaã@äÌåvëïé–\GitHub clone\10423srepository/flowmeter5_main.c
+[v _Read_ADC Read_ADC `(ui  1 e 2 0 ]
+{
+"21
+} 0
+"10
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"13
+} 0

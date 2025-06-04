@@ -1,0 +1,89 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"4 ../flowmeter5_gloabals.c
+[; ;../flowmeter5_gloabals.c: 4: int adcValue = 0;
+[v _adcValue `i ~T0 @X0 1 e ]
+[i _adcValue
+-> 0 `i
+]
+"5
+[; ;../flowmeter5_gloabals.c: 5: int displayValue = 0;
+[v _displayValue `i ~T0 @X0 1 e ]
+[i _displayValue
+-> 0 `i
+]
+"6
+[; ;../flowmeter5_gloabals.c: 6: unsigned char digits[4] = {0, 0, 0, 0};
+[v _digits `uc ~T0 @X0 -> 4 `i e ]
+[i _digits
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"8
+[; ;../flowmeter5_gloabals.c: 8: unsigned char displayMode = 0;
+[v _displayMode `uc ~T0 @X0 1 e ]
+[i _displayMode
+-> -> 0 `i `uc
+]
+"9
+[; ;../flowmeter5_gloabals.c: 9: unsigned char flashFlag = 1;
+[v _flashFlag `uc ~T0 @X0 1 e ]
+[i _flashFlag
+-> -> 1 `i `uc
+]
+"10
+[; ;../flowmeter5_gloabals.c: 10: unsigned char flashCount = 0;
+[v _flashCount `uc ~T0 @X0 1 e ]
+[i _flashCount
+-> -> 0 `i `uc
+]
+"11
+[; ;../flowmeter5_gloabals.c: 11: unsigned int adc_val = 0;
+[v _adc_val `ui ~T0 @X0 1 e ]
+[i _adc_val
+-> -> 0 `i `ui
+]
+"12
+[; ;../flowmeter5_gloabals.c: 12: unsigned int display_val = 0;
+[v _display_val `ui ~T0 @X0 1 e ]
+[i _display_val
+-> -> 0 `i `ui
+]
+"13
+[; ;../flowmeter5_gloabals.c: 13: unsigned char mode = 0;
+[v _mode `uc ~T0 @X0 1 e ]
+[i _mode
+-> -> 0 `i `uc
+]
+"14
+[; ;../flowmeter5_gloabals.c: 14: unsigned char flash_on = 0;
+[v _flash_on `uc ~T0 @X0 1 e ]
+[i _flash_on
+-> -> 0 `i `uc
+]
+"15
+[; ;../flowmeter5_gloabals.c: 15: unsigned int flash_timer = 0;
+[v _flash_timer `ui ~T0 @X0 1 e ]
+[i _flash_timer
+-> -> 0 `i `ui
+]
+"17
+[; ;../flowmeter5_gloabals.c: 17: const unsigned char LED_FONT_TABLE[10] = {
+[v _LED_FONT_TABLE `Cuc ~T0 @X0 -> 10 `i e ]
+[i _LED_FONT_TABLE
+:U ..
+-> -> 63 `i `uc
+-> -> 6 `i `uc
+-> -> 91 `i `uc
+-> -> 79 `i `uc
+-> -> 102 `i `uc
+-> -> 109 `i `uc
+-> -> 125 `i `uc
+-> -> 7 `i `uc
+-> -> 127 `i `uc
+-> -> 111 `i `uc
+..
+]
